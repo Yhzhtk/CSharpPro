@@ -1,0 +1,13 @@
+E:\GDH\ImageGroup\ImageGroup\bin\Debug\ImageGroup.exe
+E:\GDH\ImageGroup\ImageGroup\bin\Debug\ImageGroup.pdb
+E:\GDH\ImageGroup\ImageGroup\obj\x86\Debug\ResolveAssemblyReference.cache
+E:\GDH\ImageGroup\ImageGroup\obj\x86\Debug\ImageGroup.Properties.Resources.resources
+E:\GDH\ImageGroup\ImageGroup\obj\x86\Debug\GenerateResource.read.1.tlog
+E:\GDH\ImageGroup\ImageGroup\obj\x86\Debug\GenerateResource.write.1.tlog
+E:\GDH\ImageGroup\ImageGroup\obj\x86\Debug\ImageGroup.exe
+E:\GDH\ImageGroup\ImageGroup\obj\x86\Debug\ImageGroup.pdb
+E:\GDH\ImageGroup\ImageGroup\obj\x86\Debug\ImageGroup.MainForm.resources
+E:\GDH\ImageGroup\ImageGroup\obj\x86\Debug\ImageGroup.KeysForm.resources
+E:\GDH\ImageGroup\ImageGroup\obj\x86\Debug\ImageGroup.AddHighForm.resources
+E:\GDH\ImageGroup\ImageGroup\bin\Debug\ImageGroup.exe.config
+E:\GDH\ImageGroup\ImageGroup\obj\x86\Debug\ImageGroup.SelImageForm.resources

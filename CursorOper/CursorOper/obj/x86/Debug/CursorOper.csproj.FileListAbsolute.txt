@@ -1,0 +1,9 @@
+E:\GDH\CursorOper\CursorOper\bin\Debug\CursorOper.exe
+E:\GDH\CursorOper\CursorOper\bin\Debug\CursorOper.pdb
+E:\GDH\CursorOper\CursorOper\obj\x86\Debug\ResolveAssemblyReference.cache
+E:\GDH\CursorOper\CursorOper\obj\x86\Debug\CursorOper.MainForm.resources
+E:\GDH\CursorOper\CursorOper\obj\x86\Debug\CursorOper.Properties.Resources.resources
+E:\GDH\CursorOper\CursorOper\obj\x86\Debug\GenerateResource.read.1.tlog
+E:\GDH\CursorOper\CursorOper\obj\x86\Debug\GenerateResource.write.1.tlog
+E:\GDH\CursorOper\CursorOper\obj\x86\Debug\CursorOper.exe
+E:\GDH\CursorOper\CursorOper\obj\x86\Debug\CursorOper.pdb

@@ -1,0 +1,15 @@
+E:\GDH\NovelManager\NovelManager\obj\x86\Debug\ResolveAssemblyReference.cache
+E:\GDH\NovelManager\NovelManager\obj\x86\Debug\NovelManager.Properties.Resources.resources
+E:\GDH\NovelManager\NovelManager\obj\x86\Debug\GenerateResource.read.1.tlog
+E:\GDH\NovelManager\NovelManager\obj\x86\Debug\GenerateResource.write.1.tlog
+E:\GDH\NovelManager\NovelManager\bin\Debug\NovelManager.exe
+E:\GDH\NovelManager\NovelManager\bin\Debug\NovelManager.pdb
+E:\GDH\NovelManager\NovelManager\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Common.dll
+E:\GDH\NovelManager\NovelManager\bin\Debug\MySql.Data.dll
+E:\GDH\NovelManager\NovelManager\bin\Debug\System.Data.SQLite.DLL
+E:\GDH\NovelManager\NovelManager\obj\x86\Debug\NovelManager.exe
+E:\GDH\NovelManager\NovelManager\obj\x86\Debug\NovelManager.pdb
+E:\GDH\NovelManager\NovelManager\obj\x86\Debug\NovelManager.MainForm.resources
+E:\GDH\NovelManager\NovelManager\obj\x86\Debug\NovelManager.ChapterForm.resources
+E:\GDH\NovelManager\NovelManager\obj\x86\Debug\NovelManager.ConfigForm.resources
+E:\GDH\NovelManager\NovelManager\obj\x86\Debug\NovelManager.AddChapterForm.resources

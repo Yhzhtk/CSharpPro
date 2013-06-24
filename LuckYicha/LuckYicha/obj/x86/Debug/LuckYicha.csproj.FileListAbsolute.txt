@@ -1,0 +1,9 @@
+E:\GDH\LuckYicha\LuckYicha\bin\Debug\LuckYicha.exe
+E:\GDH\LuckYicha\LuckYicha\bin\Debug\LuckYicha.pdb
+E:\GDH\LuckYicha\LuckYicha\obj\x86\Debug\ResolveAssemblyReference.cache
+E:\GDH\LuckYicha\LuckYicha\obj\x86\Debug\LuckYicha.LuckForm.resources
+E:\GDH\LuckYicha\LuckYicha\obj\x86\Debug\LuckYicha.Properties.Resources.resources
+E:\GDH\LuckYicha\LuckYicha\obj\x86\Debug\GenerateResource.read.1.tlog
+E:\GDH\LuckYicha\LuckYicha\obj\x86\Debug\GenerateResource.write.1.tlog
+E:\GDH\LuckYicha\LuckYicha\obj\x86\Debug\LuckYicha.exe
+E:\GDH\LuckYicha\LuckYicha\obj\x86\Debug\LuckYicha.pdb

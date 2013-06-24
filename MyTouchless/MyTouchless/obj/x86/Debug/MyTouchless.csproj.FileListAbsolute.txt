@@ -1,0 +1,10 @@
+E:\GDH\MyTouchless\MyTouchless\obj\x86\Debug\ResolveAssemblyReference.cache
+E:\GDH\MyTouchless\MyTouchless\obj\x86\Debug\MyTouchless.MainForm.resources
+E:\GDH\MyTouchless\MyTouchless\obj\x86\Debug\MyTouchless.Properties.Resources.resources
+E:\GDH\MyTouchless\MyTouchless\obj\x86\Debug\GenerateResource.read.1.tlog
+E:\GDH\MyTouchless\MyTouchless\obj\x86\Debug\GenerateResource.write.1.tlog
+E:\GDH\MyTouchless\MyTouchless\bin\Debug\MyTouchless.exe
+E:\GDH\MyTouchless\MyTouchless\bin\Debug\MyTouchless.pdb
+E:\GDH\MyTouchless\MyTouchless\bin\Debug\TouchlessLib.dll
+E:\GDH\MyTouchless\MyTouchless\obj\x86\Debug\MyTouchless.exe
+E:\GDH\MyTouchless\MyTouchless\obj\x86\Debug\MyTouchless.pdb

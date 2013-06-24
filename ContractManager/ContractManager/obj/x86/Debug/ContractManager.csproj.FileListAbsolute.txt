@@ -1,0 +1,14 @@
+E:\GDH\ContractManager\ContractManager\obj\x86\Debug\ResolveAssemblyReference.cache
+E:\GDH\ContractManager\ContractManager\obj\x86\Debug\ContractManager.ContractEditForm.resources
+E:\GDH\ContractManager\ContractManager\obj\x86\Debug\ContractManager.MainForm.resources
+E:\GDH\ContractManager\ContractManager\obj\x86\Debug\ContractManager.Properties.Resources.resources
+E:\GDH\ContractManager\ContractManager\obj\x86\Debug\GenerateResource.read.1.tlog
+E:\GDH\ContractManager\ContractManager\obj\x86\Debug\GenerateResource.write.1.tlog
+E:\GDH\ContractManager\ContractManager\bin\Debug\ContractManager.exe
+E:\GDH\ContractManager\ContractManager\bin\Debug\ContractManager.pdb
+E:\GDH\ContractManager\ContractManager\bin\Debug\NPOI.dll
+E:\GDH\ContractManager\ContractManager\obj\x86\Debug\ContractManager.exe
+E:\GDH\ContractManager\ContractManager\obj\x86\Debug\ContractManager.pdb
+E:\GDH\ContractManager\ContractManager\obj\x86\Debug\ContractManager.LogForm.resources
+E:\GDH\ContractManager\ContractManager\obj\x86\Debug\ContractManager.TxtForm.resources
+E:\GDH\ContractManager\ContractManager\obj\x86\Debug\ContractManager.ManUserForm.resources

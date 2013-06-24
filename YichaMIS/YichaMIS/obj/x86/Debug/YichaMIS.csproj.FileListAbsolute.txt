@@ -1,0 +1,13 @@
+E:\GDH\YichaMIS\YichaMIS\bin\Debug\YichaMIS.exe.config
+E:\GDH\YichaMIS\YichaMIS\bin\Debug\YichaMIS.exe
+E:\GDH\YichaMIS\YichaMIS\bin\Debug\YichaMIS.pdb
+E:\GDH\YichaMIS\YichaMIS\obj\x86\Debug\ResolveAssemblyReference.cache
+E:\GDH\YichaMIS\YichaMIS\obj\x86\Debug\YichaMIS.LoginForm.resources
+E:\GDH\YichaMIS\YichaMIS\obj\x86\Debug\YichaMIS.MainForm.resources
+E:\GDH\YichaMIS\YichaMIS\obj\x86\Debug\YichaMIS.Properties.Resources.resources
+E:\GDH\YichaMIS\YichaMIS\obj\x86\Debug\YichaMIS.PwdForm.resources
+E:\GDH\YichaMIS\YichaMIS\obj\x86\Debug\YichaMIS.YctForm.resources
+E:\GDH\YichaMIS\YichaMIS\obj\x86\Debug\GenerateResource.read.1.tlog
+E:\GDH\YichaMIS\YichaMIS\obj\x86\Debug\GenerateResource.write.1.tlog
+E:\GDH\YichaMIS\YichaMIS\obj\x86\Debug\YichaMIS.exe
+E:\GDH\YichaMIS\YichaMIS\obj\x86\Debug\YichaMIS.pdb
