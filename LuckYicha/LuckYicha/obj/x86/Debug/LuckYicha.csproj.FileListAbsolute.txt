@@ -7,5 +7,12 @@ E:\GDH\LuckYicha\LuckYicha\obj\x86\Debug\GenerateResource.read.1.tlog
 E:\GDH\LuckYicha\LuckYicha\obj\x86\Debug\GenerateResource.write.1.tlog
 E:\GDH\LuckYicha\LuckYicha\obj\x86\Debug\LuckYicha.exe
 E:\GDH\LuckYicha\LuckYicha\obj\x86\Debug\LuckYicha.pdb
+D:\C#\CSharpProjAtYC\LuckYicha\LuckYicha\bin\Debug\LuckYicha.exe
+D:\C#\CSharpProjAtYC\LuckYicha\LuckYicha\bin\Debug\LuckYicha.pdb
+D:\C#\CSharpProjAtYC\LuckYicha\LuckYicha\obj\x86\Debug\ResolveAssemblyReference.cache
+D:\C#\CSharpProjAtYC\LuckYicha\LuckYicha\obj\x86\Debug\LuckYicha.LuckForm.resources
+D:\C#\CSharpProjAtYC\LuckYicha\LuckYicha\obj\x86\Debug\LuckYicha.Properties.Resources.resources
+D:\C#\CSharpProjAtYC\LuckYicha\LuckYicha\obj\x86\Debug\GenerateResource.read.1.tlog
+D:\C#\CSharpProjAtYC\LuckYicha\LuckYicha\obj\x86\Debug\GenerateResource.write.1.tlog
 D:\C#\CSharpProjAtYC\LuckYicha\LuckYicha\obj\x86\Debug\LuckYicha.exe
 D:\C#\CSharpProjAtYC\LuckYicha\LuckYicha\obj\x86\Debug\LuckYicha.pdb

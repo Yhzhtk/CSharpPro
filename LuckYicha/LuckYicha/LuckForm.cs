@@ -8,6 +8,7 @@ using System.Text;
 using System.Windows.Forms;
 using System.Threading;
 using System.Collections;
+using System.IO;
 using YH;
 
 namespace LuckYicha
@@ -45,6 +46,9 @@ namespace LuckYicha
         Bitmap gongxi = Properties.Resources.gongxi;
         Bitmap gongxix = Properties.Resources.gongxix;
 
+        Bitmap back1 = Properties.Resources.back1;
+        Bitmap back2 = Properties.Resources.back2;
+
         public LuckForm()
         {
             InitializeComponent();
@@ -64,7 +68,15 @@ namespace LuckYicha
         {
             iniMp.play();
 
-            this.BackgroundImage = Properties.Resources.back1;
+            if(File.Exists("back1.png")){
+                back1 = new Bitmap("back1.png");
+            }
+            if (File.Exists("back2.png"))
+            {
+                back2 = new Bitmap("back2.png");
+            }
+
+            this.BackgroundImage = back1;
 
             List<string> all = Util.readListTxtNoEmpty("phone.txt");
             foreach (string a in all)
@@ -133,7 +145,7 @@ namespace LuckYicha
                                 if (!this.Visible)
                                 {
                                     iniMp.Puase();
-                                    this.BackgroundImage = Properties.Resources.back1;
+                                    this.BackgroundImage = back1;
                                     this.startPanel.Visible = false;
                                     this.panelChoujian.Visible = true;
 
@@ -326,7 +338,7 @@ namespace LuckYicha
         /// <param name="e"></param>
         private void panelChoujian_Click(object sender, EventArgs e)
         {
-            this.BackgroundImage = Properties.Resources.back2;
+            this.BackgroundImage = back2;
             this.panelChoujian.Visible = false;
 
             this.startPanel.Visible = true;
