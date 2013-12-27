@@ -464,7 +464,7 @@ namespace LuckYicha
             }
             iniMp.play();
 
-            ranks[nowRank].rankPeople.Add(phoneLab.Text);
+            ranks[nowRank].rankPeople.Add(areaLab.Text + " " + phoneLab.Text);
 
             string content = DateTime.Now + "\t" + ranks[nowRank].rankName + "\t" + phoneLab.Text + "\r\n";
             Util.writeTxt("res.txt", content, true);
@@ -530,25 +530,20 @@ namespace LuckYicha
 
             string lp = "";
             RankMode now = ranks[nowRank];
-            
-            foreach (string k in areas)
-            {
-                List<string> ps = (List<string>)now.SeqPeople[k];
-                if (ps == null || ps.Count == 0)
-                {
-                    continue;
-                }
 
+            List<string> ps = (List<string>)now.rankPeople;
+            if (ps != null || ps.Count != 0)
+            {
                 int i = 0;
                 foreach (string p in ps)
                 {
                     if (i == 0)
                     {
-                        lp += k + " " + p;
+                        lp += p;
                     }
                     else if (i % 2 == 0 && i > 0)
                     {
-                        lp += "\r\n　　 " + p;
+                        lp += "\r\n" + p;
                     }
                     else if (i % 2 == 1)
                     {

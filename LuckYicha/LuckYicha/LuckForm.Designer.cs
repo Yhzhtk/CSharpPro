@@ -108,7 +108,7 @@
             this.phoneLab.BackColor = System.Drawing.Color.Transparent;
             this.phoneLab.Font = new System.Drawing.Font("华文仿宋", 42F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.phoneLab.ForeColor = System.Drawing.Color.Gold;
-            this.phoneLab.Location = new System.Drawing.Point(374, 333);
+            this.phoneLab.Location = new System.Drawing.Point(386, 333);
             this.phoneLab.Name = "phoneLab";
             this.phoneLab.Size = new System.Drawing.Size(373, 63);
             this.phoneLab.TabIndex = 2;
@@ -207,13 +207,13 @@
             this.areaLab.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.areaLab.AutoSize = true;
             this.areaLab.BackColor = System.Drawing.Color.Transparent;
-            this.areaLab.Font = new System.Drawing.Font("华文仿宋", 26.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.areaLab.Font = new System.Drawing.Font("华文仿宋", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.areaLab.ForeColor = System.Drawing.Color.Gold;
-            this.areaLab.Location = new System.Drawing.Point(292, 346);
+            this.areaLab.Location = new System.Drawing.Point(283, 346);
             this.areaLab.Name = "areaLab";
-            this.areaLab.Size = new System.Drawing.Size(89, 39);
+            this.areaLab.Size = new System.Drawing.Size(114, 36);
             this.areaLab.TabIndex = 23;
-            this.areaLab.Text = "　　";
+            this.areaLab.Text = "王子东";
             // 
             // gongxixPicBox
             // 
@@ -242,7 +242,7 @@
             this.luckPanel.Controls.Add(this.luckOkLab);
             this.luckPanel.Controls.Add(this.luckPeopleLab);
             this.luckPanel.Controls.Add(this.luckTitleLab);
-            this.luckPanel.Location = new System.Drawing.Point(695, 723);
+            this.luckPanel.Location = new System.Drawing.Point(718, 716);
             this.luckPanel.Name = "luckPanel";
             this.luckPanel.Size = new System.Drawing.Size(601, 517);
             this.luckPanel.TabIndex = 20;
@@ -267,11 +267,11 @@
             this.luckPeopleLab.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.luckPeopleLab.AutoSize = true;
             this.luckPeopleLab.BackColor = System.Drawing.Color.Transparent;
-            this.luckPeopleLab.Font = new System.Drawing.Font("微软雅黑", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.luckPeopleLab.Font = new System.Drawing.Font("微软雅黑", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.luckPeopleLab.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
             this.luckPeopleLab.Location = new System.Drawing.Point(25, 89);
             this.luckPeopleLab.Name = "luckPeopleLab";
-            this.luckPeopleLab.Size = new System.Drawing.Size(553, 312);
+            this.luckPeopleLab.Size = new System.Drawing.Size(559, 248);
             this.luckPeopleLab.TabIndex = 8;
             this.luckPeopleLab.Text = resources.GetString("luckPeopleLab.Text");
             // 
