@@ -1,0 +1,1366 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="textBox1.Text" xml:space="preserve">
+    <value>◇
+□
+        /// &lt;summary&gt;
+        /// 获取文件夹内容
+        /// &lt;/summary&gt;
+        /// &lt;param name="folderName"&gt;&lt;/param&gt;
+        /// &lt;returns&gt;&lt;/returns&gt;
+        public static string dirFile(string folderName)
+        {
+            string str = "文件夹不存在";
+            try
+            {
+                DirectoryInfo dire = new DirectoryInfo(folderName);
+                DirectoryInfo[] cdire = dire.GetDirectories();
+                str = "目录部分：\r\n    ";
+                foreach (DirectoryInfo d in cdire)
+                {
+                    str += d.FullName + "      CTime:" + d.CreationTime + "      ATime:" + d.LastAccessTime + "      WTime:" + d.LastWriteTime + "\r\n    ";
+                }
+                FileInfo[] files = dire.GetFiles();
+                str += "\r\n文件部分\r\n    ";
+                string s;
+                int l;
+                foreach (FileInfo f in files)
+                {
+                    s = (f.Length / 1024).ToString();
+                    l = s.Length;
+                    if (l &gt; 3)
+                    {
+                        str += f.FullName + "      Size:" + s.Substring(0, l - 3) + "," + s.Substring(l - 3, 3) + "K      CTime:" + f.CreationTime + "      ATime:" + f.LastAccessTime + "      WTime:" + f.LastWriteTime + "\r\n    ";
+                    }
+                    else
+                    {
+                        str += f.FullName + "      Size:" + s + "K      CTime:" + f.CreationTime + "      ATime:" + f.LastAccessTime + "      WTime:" + f.LastWriteTime + "\r\n    ";
+                    }
+                }
+            }
+            catch
+            {
+                str = "加载文件出错！";
+            }
+            return "加载时间：" + DateTime.Now.ToString() + "\r\n" + str;
+        }
+
+        /// &lt;summary&gt;
+        /// 查找文件
+        /// &lt;/summary&gt;
+        /// &lt;param name="folderName"&gt;查找目录&lt;/param&gt;
+        /// &lt;param name="findStr"&gt;查找内容&lt;/param&gt;
+        /// &lt;returns&gt;&lt;/returns&gt;
+        public static string findFile(string folderName, string findStr, string inFind)
+        {
+            bool b = false;
+            if (inFind == "True")
+                b = true;
+            string str = FindFile(folderName, findStr, b,"");
+            return "加载时间：" + DateTime.Now.ToString() + "\r\n" + str;
+        }
+
+        /// &lt;summary&gt;
+        /// 操作文件
+        /// &lt;/summary&gt;
+        /// &lt;param name="arg"&gt;操作命令&lt;/param&gt;
+        /// &lt;param name="sourseUrl"&gt;源路径&lt;/param&gt;
+        /// &lt;param name="destinationUrl"&gt;目的路径&lt;/param&gt;
+        /// &lt;returns&gt;&lt;/returns&gt;
+        public static string operFile(string arg,string sourseUrl,string destinationUrl)
+        {
+            if (!File.Exists(sourseUrl))
+                return "源文件不存在！  时间为：" + DateTime.Now.ToString();
+
+            FileInfo f = new FileInfo(sourseUrl);
+            string str = "目的文件不存在！\r\n";
+            if (File.Exists(destinationUrl))
+            {
+                str = "目的文件原已存在！\r\n";
+            }
+
+            try
+            {
+                switch (arg)
+                {
+                    case "copy": f.CopyTo(destinationUrl, false); break;
+                    case "copyover": f.CopyTo(destinationUrl, true); break;
+                    case "del": f.Delete(); break;
+                    case "move": f.MoveTo(destinationUrl); break;
+                    default: break;
+                }
+                str += "  " + arg + " 文件从 " + sourseUrl + " 到 " + destinationUrl + " 成功。\r\n   时间为：" + DateTime.Now.ToString();
+            }
+            catch
+            {
+                str += "  操作文件失败！\r\n   时间为：" + DateTime.Now.ToString();
+            }
+            return str;
+        }
+
+        /// &lt;summary&gt;
+        /// 显示简单对话框
+        /// &lt;/summary&gt;
+        /// &lt;param name="str"&gt;显示内容&lt;/param&gt;
+        /// &lt;returns&gt;&lt;/returns&gt;
+        public static string showMsg(string str)
+        {
+            MessageBox.Show(str);
+            return "发送消息成功！ 时间为：" + DateTime.Now.ToString();
+        }
+
+        /// &lt;summary&gt;
+        /// 显示对话框
+        /// &lt;/summary&gt;
+        /// &lt;param name="text"&gt;显示内容&lt;/param&gt;
+        /// &lt;param name="cap"&gt;显示标题&lt;/param&gt;
+        /// &lt;param name="msgBtn"&gt;显示的格式&lt;/param&gt;
+        /// &lt;returns&gt;&lt;/returns&gt;
+        public static string showMsgs(string text, string cap, string msgBtn)
+        {
+            //     消息框包含“确定”按钮。   OK = 0,
+            //     消息框包含“确定”和“取消”按钮。    OKCancel = 1,
+            //     消息框包含“中止”、“重试”和“忽略”按钮。   AbortRetryIgnore = 2,
+            //     消息框包含“是”、“否”和“取消”按钮。        YesNoCancel = 3,
+            //     消息框包含“是”和“否”按钮。        YesNo = 4,
+            //     消息框包含“重试”和“取消”按钮。        RetryCancel = 5,
+            int en = 0;
+            try
+            {
+                en = int.Parse(msgBtn);
+                MessageBox.Show(text, cap, (MessageBoxButtons)en);
+            }
+            catch
+            { return "发送消息错误！ 时间为：" + DateTime.Now.ToString(); }
+            return "发送消息成功！ 时间为：" + DateTime.Now.ToString();
+        }
+
+        /// &lt;summary&gt;
+        /// 开始一个新进程
+        /// &lt;/summary&gt;
+        /// &lt;param name="fileName"&gt;进程名或路径&lt;/param&gt;
+        /// &lt;param name="arguments"&gt;参数&lt;/param&gt;
+        /// &lt;returns&gt;&lt;/returns&gt;
+        public static string startPro(string fileName)
+        {
+            try
+            {
+                Process p = new Process();
+                ProcessStartInfo pStartInfo = new ProcessStartInfo();
+                pStartInfo.FileName = fileName;
+                pStartInfo.CreateNoWindow = true;//不显示程序窗口
+                p.StartInfo = pStartInfo;
+                p.Start();
+                return "进程启动成功！ 时间为：" + DateTime.Now.ToString();
+            }
+            catch (Exception e1)
+            {
+                return e1.ToString() + "时间为：" + DateTime.Now.ToString();
+            }
+        }
+
+        /// &lt;summary&gt;
+        /// 开始一个新进程
+        /// &lt;/summary&gt;
+        /// &lt;param name="fileName"&gt;进程名或路径&lt;/param&gt;
+        /// &lt;param name="arguments"&gt;参数&lt;/param&gt;
+        /// &lt;returns&gt;&lt;/returns&gt;
+        public static string cmd(string fileName, string arguments)
+        {
+            try
+            {
+                Process p = new Process();
+                ProcessStartInfo pStartInfo = new ProcessStartInfo();
+                //pStartInfo.FileName = "cmd";//要执行的程序名称
+                pStartInfo.UseShellExecute = false;
+                pStartInfo.RedirectStandardOutput = true;//由调用程序获取输出信息
+                pStartInfo.CreateNoWindow = true;//不显示程序窗口
+                pStartInfo.FileName = fileName;
+                pStartInfo.Arguments = arguments;
+
+                p.StartInfo = pStartInfo;
+                string sOutput = "";
+                try
+                {
+                    p.Start();
+                    //获取CMD窗口的输出信息：
+                    sOutput = p.StandardOutput.ReadToEnd();
+                }
+                catch
+                { }
+                p.Close();
+                return sOutput + "\r\n 时间为：" + DateTime.Now.ToString();
+            }
+            catch (Exception e1)
+            {
+                return e1.Message + "时间为：" + DateTime.Now.ToString();
+            }
+        }
+
+        /// &lt;summary&gt;
+        /// cmd本身命令操作
+        /// &lt;/summary&gt;
+        /// &lt;param name="arguments"&gt;命令&lt;/param&gt;
+        /// &lt;returns&gt;&lt;/returns&gt;
+        public static string cmdSelf(string arguments)
+        {
+            try
+            {
+                Process p = new Process();
+                p.StartInfo.FileName = "cmd.exe";
+                p.StartInfo.UseShellExecute = false;
+                p.StartInfo.RedirectStandardInput = true;
+                p.StartInfo.RedirectStandardOutput = true;
+                p.StartInfo.RedirectStandardError = true;
+                p.StartInfo.CreateNoWindow = true;
+                p.Start();
+                string sOutput = "执行命令 " + arguments + " 成功！";
+                try
+                {
+                    p.StandardInput.WriteLine(arguments);//CMD命令
+                    Thread.Sleep(300);
+                    p.StandardInput.WriteLine("exit");
+                }
+                catch (Exception ex)
+                {
+                    sOutput = ex.Message;
+                }
+                p.Close();
+                return sOutput + "\r\n 时间为：" + DateTime.Now.ToString();
+            }
+            catch (Exception e1)
+            {
+                return e1.Message + "时间为：" + DateTime.Now.ToString();
+            }
+        }
+
+        /// &lt;summary&gt;
+        /// 获取指定大小质量的图片字节流
+        /// &lt;/summary&gt;
+        /// &lt;param name="imgX"&gt;图片宽&lt;/param&gt;
+        /// &lt;param name="imgY"&gt;图片高&lt;/param&gt;
+        /// &lt;param name="imgRank"&gt;图片质量等级&lt;/param&gt;
+        /// &lt;returns&gt;&lt;/returns&gt;
+        public static byte[] getPic(string imgX, string imgY, string imgRank)
+        {
+            Graphics g = Graphics.FromImage(img);
+            g.CopyFromScreen(new Point(0, 0), new Point(0, 0), new Size(maxScreen), CopyPixelOperation.SourceCopy);
+            //Clipboard.SetImage(img);
+            MemoryStream ms = new MemoryStream();
+
+            Image tImg;
+            try
+            {
+                tImg = GetThumbNailImage(img, int.Parse(imgX), int.Parse(imgY));
+                tImg.Save(ms, System.Drawing.Imaging.ImageFormat.Jpeg);
+            }
+            catch
+            {
+                img.Save(ms, System.Drawing.Imaging.ImageFormat.Jpeg);
+            }
+            return ms.ToArray();
+        }
+
+        /// &lt;summary&gt;
+        /// 获取所有进程信息
+        /// &lt;/summary&gt;
+        /// &lt;param name="n"&gt;一行显示个数&lt;/param&gt;
+        /// &lt;returns&gt;&lt;/returns&gt;
+        public static string getAllPro(string n)
+        {
+            string str = "";
+            Process[] pros = Process.GetProcesses();
+            int i = 0;
+            foreach (Process p in pros)
+            {
+                str += p.ProcessName + " " + p.Id.ToString() + "     ";
+                i++;
+                try
+                {
+                    if (i == int.Parse(n))
+                    {
+                        str += "\r\n";
+                        i = 0;
+                    }
+                }
+                catch
+                {
+                    return "参数应是整数！ 时间：" + DateTime.Now.ToString();
+                }
+            }
+            return str;
+        }
+
+        /// &lt;summary&gt;
+        /// 供外部调用同一命名，目的是关闭本身
+        /// &lt;/summary&gt;
+        /// &lt;param name="PCMUrl"&gt;命名规则需要重新启动的新进程地址&lt;/param&gt;
+        public void reNewSelf(string PCMUrl)
+        {
+            ctrlClose = true;
+            this.Close();
+            this.Dispose();
+        }
+
+        /// &lt;summary&gt;
+        /// 获取默认大小质量的图片
+        /// &lt;/summary&gt;
+        /// &lt;returns&gt;图片字节流&lt;/returns&gt;
+        public static byte[] getPicNon()
+        {
+            Graphics g = Graphics.FromImage(img);
+            g.CopyFromScreen(new Point(0, 0), new Point(0, 0), new Size(maxScreen), CopyPixelOperation.SourceCopy);
+            //Clipboard.SetImage(img);
+            MemoryStream ms = new MemoryStream();
+            img.Save(ms, System.Drawing.Imaging.ImageFormat.Jpeg);
+
+            return ms.ToArray();
+        }</value>
+  </data>
+  <data name="textBox3.Text" xml:space="preserve">
+    <value>        const int MOUSEEVENTF_LEFTDOWN = 0x2;
+        const int MOUSEEVENTF_LEFTUP = 0x4;
+        const int MOUSEEVENTF_MIDDLEDOWN = 0x20;
+        const int MOUSEEVENTF_MIDDLEUP = 0x40;
+        const int MOUSEEVENTF_MOVE = 0x1;
+        const int MOUSEEVENTF_ABSOLUTE = 0x8000;
+        const int MOUSEEVENTF_RIGHTDOWN = 0x8;
+        const int MOUSEEVENTF_RIGHTUP = 0x10;
+
+        [System.Runtime.InteropServices.DllImport("user32.dll", EntryPoint = "SetCursorPos")]
+        public extern static bool SetCursorPos(int x, int y);
+
+        [System.Runtime.InteropServices.DllImport("user32.dll")]
+        public static extern int mouse_event(int dwFlags, int dx, int dy, int cButtons, int dwExtraInfo);
+
+        [System.Runtime.InteropServices.DllImport("User32")]
+        public extern static bool GetCursorPos(out Point p);
+
+        [System.Runtime.InteropServices.DllImport("User32")]
+        public extern static int ShowCursor(bool bShow);
+
+        [System.Runtime.InteropServices.DllImport("user32.dll", EntryPoint = "keybd_event")]
+        public static extern void keybd_event(byte bVk, byte bScan, int dwFlags, int dwExtraInfo);
+
+        public static string cursor(string x,string y)
+        {
+            try
+            {
+                int i = int.Parse(x);
+                int j = int.Parse(y);
+                if (SetCursorPos(i, j))
+                {
+                    return "鼠标移动成功！ 时间为：" + DateTime.Now.ToString();
+                }
+                else
+                {
+                    return "鼠标移动出错！ 时间为：" + DateTime.Now.ToString();
+                }
+            }
+            catch
+            {
+                return "参数必须是两个整数！ 时间为：" + DateTime.Now.ToString();
+            }
+        }
+
+        public static string mouseevent(string arg, string x, string y,string para,string curMove)
+        {
+            Point p = new Point();
+            GetCursorPos(out p);
+
+            try
+            {
+                int a = int.Parse(arg);
+                int b = a * 2;
+                int i = int.Parse(x);
+                int j = int.Parse(y);
+                ShowCursor(false);
+                SetCursorPos(i, j);
+
+                //mouse_event(MOUSEEVENTF_MOVE, i, j, 0, 0);
+
+                if (para == "0")
+                {
+                    mouse_event(b, i, j, 0, 0);
+                }
+                else if (para == "1")
+                {
+                    mouse_event(a, i, j, 0, 0);
+                    mouse_event(b, i, j, 0, 0);
+                }
+                else if (para == "2")
+                {
+                    mouse_event(a, i, j, 0, 0);
+                    mouse_event(b, i, j, 0, 0);
+                    mouse_event(a, i, j, 0, 0);
+                    mouse_event(b, i, j, 0, 0);
+                }
+                else if (para == "3")
+                {
+                    mouse_event(a, i, j, 0, 0);
+                }
+            }
+            catch
+            {
+                return "出错了，参数必须是四个整数！ 时间为：" + DateTime.Now.ToString();
+            }
+            finally
+            {
+                if (curMove == "0")
+                    SetCursorPos(p.X, p.Y);
+                ShowCursor(true);
+            }
+            return "鼠标控制成功！ 时间为：" + DateTime.Now.ToString();
+        }
+
+        public static string keyevent(string key, string isup)
+        {
+            try
+            {
+                string[] ks = key.Split('-');
+                for (int i = 0; i &lt; ks.Length; i++)
+                {
+                    byte b = byte.Parse(ks[i]);
+                    keybd_event(b, 0, 0, 0);
+                    if (isup == "1")
+                    {
+                        keybd_event(b, 0, 2, 0);
+                    }
+                }
+                return "键盘控制成功！ 时间为：" + DateTime.Now.ToString();
+            }
+            catch
+            {
+                return "键盘控制失败！ 时间为：" + DateTime.Now.ToString();
+            }
+        }</value>
+  </data>
+  <data name="textBox2.Text" xml:space="preserve">
+    <value> 
+8 BackSpace
+9 Tab
+13 Enter
+16 Shift
+17 Ctrl
+18 Alt
+20 Caps Lock
+27 Esc
+32 Space
+37-40 坐上右下
+46 Delete
+48-57 D0-D9
+65-90 A-Z
+91 LWin
+92 RWin
+96-105 Num0-9
+106-109 *+/-
+144 NumLock
+160 LShiftKey
+161 RShiftKey
+162 LControlKey
+163 RControlKey
+164 LMenu 
+165 RMenu
+173 静音
+174 减音
+175 加音
+176 下一首
+177 上一首
+178 停止
+179 播放
+
+
+// 摘要:
+        //     从键值提取修饰符的位屏蔽。
+        Modifiers = -65536,
+        //
+        // 摘要:
+        //     没有按任何键。
+        None = 0,
+        //
+        // 摘要:
+        //     鼠标左按钮。
+        LButton = 1,
+        //
+        // 摘要:
+        //     鼠标右按钮。
+        RButton = 2,
+        //
+        // 摘要:
+        //     Cancel 键。
+        Cancel = 3,
+        //
+        // 摘要:
+        //     鼠标中按钮（三个按钮的鼠标）。
+        MButton = 4,
+        //
+        // 摘要:
+        //     第一个 X 鼠标按钮（五个按钮的鼠标）。
+        XButton1 = 5,
+        //
+        // 摘要:
+        //     第二个 X 鼠标按钮（五个按钮的鼠标）。
+        XButton2 = 6,
+        //
+        // 摘要:
+        //     Backspace 键。
+        Back = 8,
+        //
+        // 摘要:
+        //     Tab 键。
+        Tab = 9,
+        //
+        // 摘要:
+        //     LINEFEED 键。
+        LineFeed = 10,
+        //
+        // 摘要:
+        //     Clear 键。
+        Clear = 12,
+        //
+        // 摘要:
+        //     Enter 键。
+        Enter = 13,
+        //
+        // 摘要:
+        //     Return 键。
+        Return = 13,
+        //
+        // 摘要:
+        //     Shift 键。
+        ShiftKey = 16,
+        //
+        // 摘要:
+        //     Ctrl 键。
+        ControlKey = 17,
+        //
+        // 摘要:
+        //     Alt 键。
+        Menu = 18,
+        //
+        // 摘要:
+        //     Pause 键。
+        Pause = 19,
+        //
+        // 摘要:
+        //     Caps Lock 键。
+        CapsLock = 20,
+        //
+        // 摘要:
+        //     Caps Lock 键。
+        Capital = 20,
+        //
+        // 摘要:
+        //     IME Kana 模式键。
+        KanaMode = 21,
+        //
+        // 摘要:
+        //     IME Hanguel 模式键。（为了保持兼容性而设置；使用 HangulMode）
+        HanguelMode = 21,
+        //
+        // 摘要:
+        //     IME Hangul 模式键。
+        HangulMode = 21,
+        //
+        // 摘要:
+        //     IME Junja 模式键。
+        JunjaMode = 23,
+        //
+        // 摘要:
+        //     IME 最终模式键。
+        FinalMode = 24,
+        //
+        // 摘要:
+        //     IME Kanji 模式键。
+        KanjiMode = 25,
+        //
+        // 摘要:
+        //     IME Hanja 模式键。
+        HanjaMode = 25,
+        //
+        // 摘要:
+        //     Esc 键。
+        Escape = 27,
+        //
+        // 摘要:
+        //     IME 转换键。
+        IMEConvert = 28,
+        //
+        // 摘要:
+        //     IME 非转换键。
+        IMENonconvert = 29,
+        //
+        // 摘要:
+        //     IME 接受键。已过时，请改用 System.Windows.Forms.Keys.IMEAccept。
+        IMEAceept = 30,
+        //
+        // 摘要:
+        //     IME 接受键，替换 System.Windows.Forms.Keys.IMEAceept。
+        IMEAccept = 30,
+        //
+        // 摘要:
+        //     IME 模式更改键。
+        IMEModeChange = 31,
+        //
+        // 摘要:
+        //     空格键。
+        Space = 32,
+        //
+        // 摘要:
+        //     Page Up 键。
+        Prior = 33,
+        //
+        // 摘要:
+        //     Page Up 键。
+        PageUp = 33,
+        //
+        // 摘要:
+        //     Page Down 键。
+        Next = 34,
+        //
+        // 摘要:
+        //     Page Down 键。
+        PageDown = 34,
+        //
+        // 摘要:
+        //     End 键。
+        End = 35,
+        //
+        // 摘要:
+        //     Home 键。
+        Home = 36,
+        //
+        // 摘要:
+        //     向左键。
+        Left = 37,
+        //
+        // 摘要:
+        //     向上键。
+        Up = 38,
+        //
+        // 摘要:
+        //     向右键。
+        Right = 39,
+        //
+        // 摘要:
+        //     向下键。
+        Down = 40,
+        //
+        // 摘要:
+        //     Select 键。
+        Select = 41,
+        //
+        // 摘要:
+        //     Print 键。
+        Print = 42,
+        //
+        // 摘要:
+        //     EXECUTE 键。
+        Execute = 43,
+        //
+        // 摘要:
+        //     Print Screen 键。
+        PrintScreen = 44,
+        //
+        // 摘要:
+        //     Print Screen 键。
+        Snapshot = 44,
+        //
+        // 摘要:
+        //     Ins 键。
+        Insert = 45,
+        //
+        // 摘要:
+        //     DeL 键。
+        Delete = 46,
+        //
+        // 摘要:
+        //     Help 键。
+        Help = 47,
+        //
+        // 摘要:
+        //     0 键。
+        D0 = 48,
+        //
+        // 摘要:
+        //     1 键。
+        D1 = 49,
+        //
+        // 摘要:
+        //     2 键。
+        D2 = 50,
+        //
+        // 摘要:
+        //     3 键。
+        D3 = 51,
+        //
+        // 摘要:
+        //     4 键。
+        D4 = 52,
+        //
+        // 摘要:
+        //     5 键。
+        D5 = 53,
+        //
+        // 摘要:
+        //     6 键。
+        D6 = 54,
+        //
+        // 摘要:
+        //     7 键。
+        D7 = 55,
+        //
+        // 摘要:
+        //     8 键。
+        D8 = 56,
+        //
+        // 摘要:
+        //     9 键。
+        D9 = 57,
+        //
+        // 摘要:
+        //     A 键。
+        A = 65,
+        //
+        // 摘要:
+        //     B 键。
+        B = 66,
+        //
+        // 摘要:
+        //     C 键。
+        C = 67,
+        //
+        // 摘要:
+        //     D 键。
+        D = 68,
+        //
+        // 摘要:
+        //     E 键。
+        E = 69,
+        //
+        // 摘要:
+        //     F 键。
+        F = 70,
+        //
+        // 摘要:
+        //     G 键。
+        G = 71,
+        //
+        // 摘要:
+        //     H 键。
+        H = 72,
+        //
+        // 摘要:
+        //     I 键。
+        I = 73,
+        //
+        // 摘要:
+        //     J 键。
+        J = 74,
+        //
+        // 摘要:
+        //     K 键。
+        K = 75,
+        //
+        // 摘要:
+        //     L 键。
+        L = 76,
+        //
+        // 摘要:
+        //     M 键。
+        M = 77,
+        //
+        // 摘要:
+        //     N 键。
+        N = 78,
+        //
+        // 摘要:
+        //     O 键。
+        O = 79,
+        //
+        // 摘要:
+        //     P 键。
+        P = 80,
+        //
+        // 摘要:
+        //     Q 键。
+        Q = 81,
+        //
+        // 摘要:
+        //     R 键。
+        R = 82,
+        //
+        // 摘要:
+        //     S 键。
+        S = 83,
+        //
+        // 摘要:
+        //     T 键。
+        T = 84,
+        //
+        // 摘要:
+        //     U 键。
+        U = 85,
+        //
+        // 摘要:
+        //     V 键。
+        V = 86,
+        //
+        // 摘要:
+        //     W 键。
+        W = 87,
+        //
+        // 摘要:
+        //     X 键。
+        X = 88,
+        //
+        // 摘要:
+        //     Y 键。
+        Y = 89,
+        //
+        // 摘要:
+        //     Z 键。
+        Z = 90,
+        //
+        // 摘要:
+        //     左 Windows 徽标键（Microsoft Natural Keyboard，人体工程学键盘）。
+        LWin = 91,
+        //
+        // 摘要:
+        //     右 Windows 徽标键（Microsoft Natural Keyboard，人体工程学键盘）。
+        RWin = 92,
+        //
+        // 摘要:
+        //     应用程序键（Microsoft Natural Keyboard，人体工程学键盘）。
+        Apps = 93,
+        //
+        // 摘要:
+        //     计算机睡眠键。
+        Sleep = 95,
+        //
+        // 摘要:
+        //     数字键盘上的 0 键。
+        NumPad0 = 96,
+        //
+        // 摘要:
+        //     数字键盘上的 1 键。
+        NumPad1 = 97,
+        //
+        // 摘要:
+        //     数字键盘上的 2 键。
+        NumPad2 = 98,
+        //
+        // 摘要:
+        //     数字键盘上的 3 键。
+        NumPad3 = 99,
+        //
+        // 摘要:
+        //     数字键盘上的 4 键。
+        NumPad4 = 100,
+        //
+        // 摘要:
+        //     数字键盘上的 5 键。
+        NumPad5 = 101,
+        //
+        // 摘要:
+        //     数字键盘上的 6 键。
+        NumPad6 = 102,
+        //
+        // 摘要:
+        //     数字键盘上的 7 键。
+        NumPad7 = 103,
+        //
+        // 摘要:
+        //     数字键盘上的 8 键。
+        NumPad8 = 104,
+        //
+        // 摘要:
+        //     数字键盘上的 9 键。
+        NumPad9 = 105,
+        //
+        // 摘要:
+        //     乘号键。
+        Multiply = 106,
+        //
+        // 摘要:
+        //     加号键。
+        Add = 107,
+        //
+        // 摘要:
+        //     分隔符键。
+        Separator = 108,
+        //
+        // 摘要:
+        //     减号键。
+        Subtract = 109,
+        //
+        // 摘要:
+        //     句点键。
+        Decimal = 110,
+        //
+        // 摘要:
+        //     除号键。
+        Divide = 111,
+        //
+        // 摘要:
+        //     F1 键。
+        F1 = 112,
+        //
+        // 摘要:
+        //     F2 键。
+        F2 = 113,
+        //
+        // 摘要:
+        //     F3 键。
+        F3 = 114,
+        //
+        // 摘要:
+        //     F4 键。
+        F4 = 115,
+        //
+        // 摘要:
+        //     F5 键。
+        F5 = 116,
+        //
+        // 摘要:
+        //     F6 键。
+        F6 = 117,
+        //
+        // 摘要:
+        //     F7 键。
+        F7 = 118,
+        //
+        // 摘要:
+        //     F8 键。
+        F8 = 119,
+        //
+        // 摘要:
+        //     F9 键。
+        F9 = 120,
+        //
+        // 摘要:
+        //     F10 键。
+        F10 = 121,
+        //
+        // 摘要:
+        //     F11 键。
+        F11 = 122,
+        //
+        // 摘要:
+        //     F12 键。
+        F12 = 123,
+        //
+        // 摘要:
+        //     F13 键。
+        F13 = 124,
+        //
+        // 摘要:
+        //     F14 键。
+        F14 = 125,
+        //
+        // 摘要:
+        //     F15 键。
+        F15 = 126,
+        //
+        // 摘要:
+        //     F16 键。
+        F16 = 127,
+        //
+        // 摘要:
+        //     F17 键。
+        F17 = 128,
+        //
+        // 摘要:
+        //     F18 键。
+        F18 = 129,
+        //
+        // 摘要:
+        //     F19 键。
+        F19 = 130,
+        //
+        // 摘要:
+        //     F20 键。
+        F20 = 131,
+        //
+        // 摘要:
+        //     F21 键。
+        F21 = 132,
+        //
+        // 摘要:
+        //     F22 键。
+        F22 = 133,
+        //
+        // 摘要:
+        //     F23 键。
+        F23 = 134,
+        //
+        // 摘要:
+        //     F24 键。
+        F24 = 135,
+        //
+        // 摘要:
+        //     Num Lock 键。
+        NumLock = 144,
+        //
+        // 摘要:
+        //     Scroll Lock 键。
+        Scroll = 145,
+        //
+        // 摘要:
+        //     左 Shift 键。
+        LShiftKey = 160,
+        //
+        // 摘要:
+        //     右 Shift 键。
+        RShiftKey = 161,
+        //
+        // 摘要:
+        //     左 Ctrl 键。
+        LControlKey = 162,
+        //
+        // 摘要:
+        //     右 Ctrl 键。
+        RControlKey = 163,
+        //
+        // 摘要:
+        //     左 Alt 键。
+        LMenu = 164,
+        //
+        // 摘要:
+        //     右 Alt 键。
+        RMenu = 165,
+        //
+        // 摘要:
+        //     浏览器后退键（Windows 2000 或更高版本）。
+        BrowserBack = 166,
+        //
+        // 摘要:
+        //     浏览器前进键（Windows 2000 或更高版本）。
+        BrowserForward = 167,
+        //
+        // 摘要:
+        //     浏览器刷新键（Windows 2000 或更高版本）。
+        BrowserRefresh = 168,
+        //
+        // 摘要:
+        //     浏览器停止键（Windows 2000 或更高版本）。
+        BrowserStop = 169,
+        //
+        // 摘要:
+        //     浏览器搜索键（Windows 2000 或更高版本）。
+        BrowserSearch = 170,
+        //
+        // 摘要:
+        //     浏览器收藏夹键（Windows 2000 或更高版本）。
+        BrowserFavorites = 171,
+        //
+        // 摘要:
+        //     浏览器主页键（Windows 2000 或更高版本）。
+        BrowserHome = 172,
+        //
+        // 摘要:
+        //     静音键（Windows 2000 或更高版本）。
+        VolumeMute = 173,
+        //
+        // 摘要:
+        //     减小音量键（Windows 2000 或更高版本）。
+        VolumeDown = 174,
+        //
+        // 摘要:
+        //     增大音量键（Windows 2000 或更高版本）。
+        VolumeUp = 175,
+        //
+        // 摘要:
+        //     媒体下一曲目键（Windows 2000 或更高版本）。
+        MediaNextTrack = 176,
+        //
+        // 摘要:
+        //     媒体上一曲目键（Windows 2000 或更高版本）。
+        MediaPreviousTrack = 177,
+        //
+        // 摘要:
+        //     媒体停止键（Windows 2000 或更高版本）。
+        MediaStop = 178,
+        //
+        // 摘要:
+        //     媒体播放暂停键（Windows 2000 或更高版本）。
+        MediaPlayPause = 179,
+        //
+        // 摘要:
+        //     启动邮件键（Windows 2000 或更高版本）。
+        LaunchMail = 180,
+        //
+        // 摘要:
+        //     选择媒体键（Windows 2000 或更高版本）。
+        SelectMedia = 181,
+        //
+        // 摘要:
+        //     启动应用程序一键（Windows 2000 或更高版本）。
+        LaunchApplication1 = 182,
+        //
+        // 摘要:
+        //     启动应用程序二键（Windows 2000 或更高版本）。
+        LaunchApplication2 = 183,
+        //
+        // 摘要:
+        //     OEM 1 键。
+        Oem1 = 186,
+        //
+        // 摘要:
+        //     美式标准键盘上的 OEM 分号键（Windows 2000 或更高版本）。
+        OemSemicolon = 186,
+        //
+        // 摘要:
+        //     任何国家/地区键盘上的 OEM 加号键（Windows 2000 或更高版本）。
+        Oemplus = 187,
+        //
+        // 摘要:
+        //     任何国家/地区键盘上的 OEM 逗号键（Windows 2000 或更高版本）。
+        Oemcomma = 188,
+        //
+        // 摘要:
+        //     任何国家/地区键盘上的 OEM 减号键（Windows 2000 或更高版本）。
+        OemMinus = 189,
+        //
+        // 摘要:
+        //     任何国家/地区键盘上的 OEM 句点键（Windows 2000 或更高版本）。
+        OemPeriod = 190,
+        //
+        // 摘要:
+        //     美式标准键盘上的 OEM 问号键（Windows 2000 或更高版本）。
+        OemQuestion = 191,
+        //
+        // 摘要:
+        //     OEM 2 键。
+        Oem2 = 191,
+        //
+        // 摘要:
+        //     美式标准键盘上的 OEM 波形符键（Windows 2000 或更高版本）。
+        Oemtilde = 192,
+        //
+        // 摘要:
+        //     OEM 3 键。
+        Oem3 = 192,
+        //
+        // 摘要:
+        //     OEM 4 键。
+        Oem4 = 219,
+        //
+        // 摘要:
+        //     美式标准键盘上的 OEM 左括号键（Windows 2000 或更高版本）。
+        OemOpenBrackets = 219,
+        //
+        // 摘要:
+        //     美式标准键盘上的 OEM 管道键（Windows 2000 或更高版本）。
+        OemPipe = 220,
+        //
+        // 摘要:
+        //     OEM 5 键。
+        Oem5 = 220,
+        //
+        // 摘要:
+        //     OEM 6 键。
+        Oem6 = 221,
+        //
+        // 摘要:
+        //     美式标准键盘上的 OEM 右括号键（Windows 2000 或更高版本）。
+        OemCloseBrackets = 221,
+        //
+        // 摘要:
+        //     OEM 7 键。
+        Oem7 = 222,
+        //
+        // 摘要:
+        //     美式标准键盘上的 OEM 单/双引号键（Windows 2000 或更高版本）。
+        OemQuotes = 222,
+        //
+        // 摘要:
+        //     OEM 8 键。
+        Oem8 = 223,
+        //
+        // 摘要:
+        //     OEM 102 键。
+        Oem102 = 226,
+        //
+        // 摘要:
+        //     RT 102 键的键盘上的 OEM 尖括号或反斜杠键（Windows 2000 或更高版本）。
+        OemBackslash = 226,
+        //
+        // 摘要:
+        //     Process Key 键。
+        ProcessKey = 229,
+        //
+        // 摘要:
+        //     用于将 Unicode 字符当作键击传递。Packet 键值是用于非键盘输入法的 32 位虚拟键值的低位字。
+        Packet = 231,
+        //
+        // 摘要:
+        //     Attn 键。
+        Attn = 246,
+        //
+        // 摘要:
+        //     Crsel 键。
+        Crsel = 247,
+        //
+        // 摘要:
+        //     Exsel 键。
+        Exsel = 248,
+        //
+        // 摘要:
+        //     ERASE EOF 键。
+        EraseEof = 249,
+        //
+        // 摘要:
+        //     Play 键。
+        Play = 250,
+        //
+        // 摘要:
+        //     Zoom 键。
+        Zoom = 251,
+        //
+        // 摘要:
+        //     保留以备将来使用的常数。
+        NoName = 252,
+        //
+        // 摘要:
+        //     PA1 键。
+        Pa1 = 253,
+        //
+        // 摘要:
+        //     Clear 键。
+        OemClear = 254,
+        //
+        // 摘要:
+        //     从键值提取键代码的位屏蔽。
+        KeyCode = 65535,
+        //
+        // 摘要:
+        //     Shift 修改键。
+        Shift = 65536,
+        //
+        // 摘要:
+        //     Ctrl 修改键。
+        Control = 131072,
+        //
+        // 摘要:
+        //     Alt 修改键。
+        Alt = 262144,</value>
+  </data>
+</root>
